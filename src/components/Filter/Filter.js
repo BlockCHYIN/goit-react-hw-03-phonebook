@@ -1,16 +1,16 @@
 import React from "react";
 import { nanoid } from "nanoid";
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'
 import { LableFilter } from "./LableFilter.styles";
 
 const Filter = ({
     handleChange
-}) => {
-    const filterInputId = nanoid();
-    return (
-        <>
+})=>{
+   const filterInputId = nanoid();
+return(
+<>
     <LableFilter htmlFor={filterInputId}>
-        Find contacts by name
+          Find contacts by name
     </LableFilter>
     <input
         id={filterInputId}
@@ -26,6 +26,6 @@ const Filter = ({
 
 Filter.propTypes = {
     handleChange: PropTypes.func.isRequired,
-}
+  }
 
 export default Filter;
